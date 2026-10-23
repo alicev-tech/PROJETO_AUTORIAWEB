@@ -1,0 +1,348 @@
+/*ESTILO DO BODY*/
+
+body {
+    background-color: #e5e5e5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #e16389;
+    padding: 30px;
+    margin: 0;
+}
+
+
+/*BARRA DE NAVEGAÇÃO*/
+
+.barra-navegacao {
+    background-color: #fff8fb !important;
+    border: 1px solid #f2c6d5;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+/* Nome da apresentação */
+.barra-navegacao .navbar-brand {
+    color: #a83f65;
+    font-weight: bold;
+}
+
+/* Botão principal */
+.botao-principal {
+    background-color: #e16389;
+    color: #fff;
+    border: 1px solid #e16389;
+}
+
+.botao-principal:hover {
+    background-color: #be5373;
+    color: #fff;
+}
+
+/* Botão secundário */
+.botao-secundario {
+    background-color: transparent;
+    color: #e16389;
+    border: 1px solid #e16389;
+}
+
+.botao-secundario:hover {
+    background-color: #e16389;
+    color: #fff;
+}
+
+
+/*CARTÃO DE APRESENTAÇÃO*/
+
+.cartao-apresentacao {
+    background-color: #e16389;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+/* Texto da apresentação */
+.textodeapresentacao {
+    padding: 30px;
+}
+
+.textodeapresentacao h1 {
+    color: #ebe9ea;
+    font-size: 38px;
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.textodeapresentacao p {
+    color: #fff;
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+/* Área da foto */
+.area-foto {
+    padding: 20px;
+    text-align: center;
+}
+
+.area-foto img {
+    width: 80%;
+    max-width: 320px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 4px solid #fff;
+}
+
+
+/*SITES FAVORITOS*/
+
+/* Título dos sites favoritos */
+.titulo-sites {
+    color: #e16389;
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 10px 20px;
+}
+
+/* Cartões dos aplicativos */
+.cartao-site {
+    background-color: #e5e0e2;
+    border: 1px solid #f2c6d5;
+    border-radius: 18px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito ao passar a seta do mouse */
+.cartao-site:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(225, 99, 137, 0.18);
+}
+
+/* Organização interna dos cartões */
+.cartao-site .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 24px 16px;
+}
+
+/* Ícones dos aplicativos */
+.icone-site {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Nomes dos aplicativos */
+.nome-site {
+    color: #a83f65;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 21px;
+    margin: 0;
+}
+
+/* Botões para abrir os sites */
+.botao-rosa {
+    background-color: #e16389;
+    color: #fff;
+    border: 1px solid #e16389;
+    border-radius: 10px;
+    padding: 7px 14px;
+    text-decoration: none;
+}
+
+.botao-rosa:hover {
+    background-color: #be5373;
+    border-color: #be5373;
+    color: #fff;
+}
+
+
+/* TABELA DE PREFERÊNCIAS*/
+
+/* Título da tabela */
+.titulo-tabela {
+    color: #e16389;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Área de fora da tabela */
+.tabela {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    border: 1px solid #e5bdcc;
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: #e5e0e2;
+}
+
+/* Tabela de preferências */
+.tabela table {
+    width: 100%;
+    margin-bottom: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    color: #b45e7b;
+    font-size: 14px;
+}
+
+/* Coisas da tabela */
+.tabela table th,
+.tabela table td {
+    background-color: transparent;
+    color: #b45e7b;
+    border: none;
+    border-bottom: 1px solid #f0dce4;
+    padding: 10px 14px;
+    vertical-align: middle;
+}
+
+.tabela table th {
+    font-weight: bold;
+    color: #a64e6d;
+    text-align: left;
+}
+
+/* Remove a linha inferior da última linha */
+.tabela table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* AJUSTES PARA TABLETS*/
+
+@media (max-width: 767px) {
+    body {
+        padding: 20px;
+    }
+
+    .texto-apresentacao {
+        padding: 22px;
+    }
+
+    .texto-apresentacao h1 {
+        font-size: 32px;
+    }
+
+    .area-foto {
+        padding: 0 20px 22px;
+    }
+
+    .area-foto img {
+        width: 80%;
+        max-width: 320px;
+        height: 230px;
+    }
+
+    .titulo-sites {
+        font-size: 26px;
+    }
+}
+
+
+/* AJUSTES DO QUEM SOU EU EM CELULARES*/
+
+@media (max-width: 767px) {
+    .textodeapresentacao {
+        padding: 20px 24px 28px;
+    }
+
+    .textodeapresentacao h1 {
+        font-size: 32px;
+        margin-bottom: 18px;
+    }
+
+    .textodeapresentacao p {
+        font-size: 16px;
+        line-height: 1.7;
+        text-align: left;
+        margin-bottom: 14px;
+    }
+
+    .area-foto {
+        padding: 24px 20px 0;
+        text-align: center;
+    }
+
+    .area-foto img {
+        display: block;
+        width: 100%;
+        max-width: 280px;
+        height: 230px;
+        object-fit: cover;
+        margin: 0 auto;
+        border: 4px solid #fff;
+        border-radius: 16px;
+    }
+}
+/* AJUSTES PARA CELULARES*/
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .texto-apresentacao {
+        padding: 15px;
+    }
+
+    .texto-apresentacao h1 {
+        font-size: 32px;
+    }
+
+    .texto-apresentacao p {
+        font-size: 15px;
+    }
+
+    .area-foto img {
+        width: 100%;
+        max-width: 320px;
+        height: 230px;
+    }
+
+    .titulo-sites {
+        font-size: 23px;
+        margin: 25px 5px 15px;
+    }
+
+    .nome-site {
+        font-size: 19px;
+    }
+
+    .titulo-tabela {
+        font-size: 23px;
+    }
+
+    .tabela table {
+        font-size: 12px;
+    }
+
+    .tabela table th,
+    .tabela table td {
+        padding: 9px 10px;
+    }
+}
+
+/* BARRA DE NAVEGAÇÃO EM CELULARES*/
+
+@media (max-width: 576px) {
+    .barra-navegacao .container {
+        gap: 12px;
+    }
+
+    .barra-navegacao .navbar-brand {
+        font-size: 16px;
+    }
+
+    .barra-navegacao .btn {
+        font-size: 12px;
+        padding: 6px 9px;
+    }
+}
